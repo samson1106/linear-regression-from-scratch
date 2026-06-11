@@ -1,14 +1,12 @@
 # Linear Regression From Scratch
 
-> A production-style, no-scikit-learn implementation of Linear Regression using pure NumPy, built with a Streamlit dashboard, mathematical derivations, diagnostics, model persistence, tests, linting, type checking, benchmarking, and CI.
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-From%20Scratch-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![No Scikit Learn](https://img.shields.io/badge/Scikit--Learn-Not%20Used-critical?style=for-the-badge)
-![Tests](https://img.shields.io/badge/Tests-15%20Passing-brightgreen?style=for-the-badge)
+## 📖 About the Project
 
-## Project Screenshots
+A production-style, no-scikit-learn implementation of Linear Regression using pure NumPy, built with a Streamlit dashboard, mathematical derivations, diagnostics, model persistence, tests, linting, type checking, benchmarking, and CI.
+
+
+##  📸 Project Screenshots
 
 Paste your screenshots here after running the app.
 
@@ -59,7 +57,7 @@ Core goals:
 - Save and load the trained model as JSON.
 - Verify correctness with tests, linting, type checking, and CI.
 
-## Key Features
+## 🚀 Key Features
 
 - Pure NumPy implementation, no scikit-learn.
 - Manual train/test split using a local NumPy RNG.
@@ -101,8 +99,7 @@ Dashboard tabs:
 - `Mathematics`: objective, gradient, update rule, and stability notes.
 - `Artifacts`: config display, JSON model save/load, config download.
 
-## Quickstart
-
+# ⚙️ Installation
 Clone the repository and install dependencies:
 
 ```bash
@@ -204,7 +201,9 @@ theta = theta - learning_rate * grad
 8. Analyze residuals and prediction quality.
 9. Save model parameters and scaler stats to JSON.
 
-## Project Structure
+
+
+# 📂 Project Structure
 
 ```text
 linear_regression_app/
@@ -331,17 +330,6 @@ CI file:
 .github/workflows/ci.yml
 ```
 
-## Interview Talking Points
-
-- Why `1/(2m)` in the cost function?
-- Why gradient descent is sensitive to feature scale.
-- Why scaling must be fit on train data only.
-- How vectorized gradients avoid Python loops.
-- How early stopping prevents wasted training.
-- How residual plots reveal model misspecification.
-- Why JSON persistence matters for inference workflows.
-- Why tests for gradients are stronger than only checking final metrics.
-
 ## Known Limitations
 
 - The default dataset is synthetic and one-dimensional.
@@ -349,14 +337,12 @@ CI file:
 - The Streamlit smoke test verifies app startup, not pixel-level visual regression.
 - No external real-world dataset is included by default.
 
-## Resume Summary
+## License
+```txt
+Samson Barla
 
-Suggested resume bullet:
+B.Tech Mathematics & Computing
 
-```text
-Built a no-scikit-learn Linear Regression system in NumPy with vectorized gradient descent, train-only feature scaling, early stopping, residual diagnostics, learning-rate experiments, JSON persistence, benchmarking, pytest coverage, ruff/mypy checks, and GitHub Actions CI.
+Netaji Subhas University of Technology (NSUT)
 ```
 
-## License
-
-This project is intended for educational and portfolio use.

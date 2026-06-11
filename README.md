@@ -18,21 +18,21 @@ docs/screenshots/
 
 Dashboard screenshot:
 
-```md
+
 ![Dashboard](docs/screenshots/dashboard.png)
-```
+
 
 Diagnostics screenshot:
 
-```md
+
 ![Diagnostics](docs/screenshots/diagnostics.png)
-```
+
 
 Experiments screenshot:
 
-```md
+
 ![Learning Rate Experiments](docs/screenshots/experiments.png)
-```
+
 
 Example layout after adding images:
 

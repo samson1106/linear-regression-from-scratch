@@ -8,33 +8,22 @@ A production-style, no-scikit-learn implementation of Linear Regression using pu
 
 ##  📸 Project Screenshots
 
-Paste your screenshots here after running the app.
-
-Recommended folder:
-
-```text
-docs/screenshots/
-```
-
 Dashboard screenshot:
-
 
 ![Dashboard](docs/screenshots/dashboard.png)
 
-
 Diagnostics screenshot:
-
 
 ![Diagnostics](docs/screenshots/diagnostics.png)
 
-
 Experiments screenshot:
-
 
 ![Learning Rate Experiments](docs/screenshots/experiments.png)
 
+Artifacts screenshot:
 
-Example layout after adding images:
+![Artifacts](docs/screenshots/artifacts.png)
+
 
 | Dashboard | Diagnostics |
 |---|---|
@@ -43,6 +32,8 @@ Example layout after adding images:
 | Experiments | Model Artifacts |
 |---|---|
 | ![Experiments](docs/screenshots/experiments.png) | ![Artifacts](docs/screenshots/artifacts.png) |
+
+---
 
 ## What This Project Demonstrates
 

@@ -1,0 +1,38 @@
+name: linear-regression-ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+
+      - name: Lint
+        run: python -m ruff check .
+
+      - name: Type check
+        run: python -m mypy lr_scratch
+
+      - name: Unit and smoke tests
+        run: python -m pytest
+
+      - name: CLI smoke test
+        run: python linear_regression_numpy.py --config config.json --no-save
+
+      - name: Benchmark smoke test
+        run: python benchmark.py --config config.json --samples 100 500 1000

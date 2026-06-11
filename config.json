@@ -1,0 +1,14 @@
+{
+  "n_samples": 300,
+  "noise": 2.5,
+  "true_slope": 2.5,
+  "true_intercept": 5.0,
+  "train_ratio": 0.8,
+  "seed": 42,
+  "learning_rate": 0.05,
+  "max_epochs": 2000,
+  "tolerance": 1e-8,
+  "patience": 25,
+  "early_stopping": true,
+  "scale_features": true
+}
